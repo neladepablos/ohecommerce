@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {  
+    display: block;  
+    text-align: center;
+    padding: 15px 0;   
+    width: 100%;
+    
+    // ----------menu hambuguer ----------//
+
+    .menu-hamb-toggle {
+        display: none;        
+    }
+
+}  
+
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #a4a9ad;
+    cursor: pointer;
+    margin-right: 0.7rem;
+}
+
+.iconFire {
+    color: red;
+    margin-left: 0.4rem;
+}
+
+// --------------------------- Variables 
+$color-primary: #e90b42;
+$background-color-submenu: #ee4d75;
+$color-menu-hamburguer1: $color-primary;
+$color-menu-hamburguer2: white;
+$background-color-menu-mobile: #000;
+$color-product: #000;
+$color-product-quantity:#666;
+
+

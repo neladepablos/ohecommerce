@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web,html,css,Jquery,sass">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../styles/css/styles.css">
+    <script src="https://kit.fontawesome.com/ca898f2436.js" crossorigin="anonymous"></script>
+    <title>HomeDesign</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+
+            <!-- Menu -->
+            <div class="menu-hamb-toggle" id="menu-hamb-toggle"></div>
+
+            <div class="container-logo">
+                <img class="logo" src="../images/logo.png" alt="">
+            </div>
+
+            <div class="container-input-search">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input class="input-search" id="search" type="seacrh" placeholder="¿Qué estas buscando?">
+            </div>
+
+            <div class="container-icons">
+                <a href="./pages/profile.html" class="click-profile"><i class="fa fa-user icons"></i></a>
+                <a class="xs-hide" href="#"><i class="fa fa-heart icons"></i></a>
+                <a class="xs-hide" href="#"><i class="fa fa-location-dot icons"></i></a>
+                <a href="#" onclick="togglePopup()"><i class="fa fa-bell icons"></i></a>
+            </div>
+
+            <div class="container-nav">
+                <nav class="menu smallMenu container-down hamburgerMenu" id="hamburgerMenu">
+                    <div class="div"><a href="#inicio"></i>Rebajas<i class="fa fa-fire iconFire"></i></a></div>
+                    <div class="div"><a href="#nosotros">Colecciones</a></div>
+                    <div class="with_menu">
+                        <ul class="menup">
+                            <li class="dropdow"><a href="#">Recámaras</a>
+                                <ul>
+                                    <li><a href="#opcion1">Desarrollo ecommerce</a></li>
+                                    <hr>
+                                    <li><a href="#opcion2">Marketing ecommerce</a></li>
+                                    <hr>
+                                    <li><a href="#opcion3">Subvenciones</a></li>
+                                </ul>
+                            </li>
+                    </div>
+                    <div class="with_menu">
+                        <ul class="menup">
+                            <li class="dropdow"><a href="#">Comedores</a>
+                                <ul>
+                                    <li><a href="#opcion1">Desarrollo ecommerce</a></li>
+                                    <hr>
+                                    <li><a href="#opcion2">Marketing ecommerce</a></li>
+                                    <hr>
+                                    <li><a href="#opcion3">Subvenciones</a></li>
+                                </ul>
+                            </li>
+                    </div>
+                    <div class="div"><a href="#contacto">Salas</a></div>
+                    <div class="div"><a href="#contacto">Complementarios</a></div>
+                    <div class="with_menu">
+                        <ul class="menup">
+                            <li class="dropdow"><a href="#">Colchones</a>
+                                <ul>
+                                    <li><a href="#opcion1">Desarrollo ecommerce</a></li>
+                                    <hr>
+                                    <li><a href="#opcion2">Marketing ecommerce</a></li>
+                                    <hr>
+                                    <li><a href="#opcion3">Subvenciones</a></li>
+                                </ul>
+                            </li>
+                    </div>
+                    <div class="div"><a href="#contacto">Decoración</a></div>
+                    <div class="with_menu">
+                        <ul class="menup">
+                            <li class="dropdown"><a href="#">Blog</a>
+                                <ul>
+                                    <li><a href="#opcion1">Desarrollo ecommerce</a></li>
+                                    <hr>
+                                    <li><a href="#opcion2">Marketing ecommerce</a></li>
+                                    <hr>
+                                    <li><a href="#opcion3">Subvenciones</a></li>
+                                </ul>
+                            </li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Pre-top Banner -->
+    <div class="section">
+        <div class="pre-top-banner">COMPRA HOY Y OBTÉN 5% ADICIONAL SOLO COMO CLIENTE PREMIER</div>
+    </div>
+    <!-- Pre-top Banner -->
+
+    <!-- div containing the popup -->
+    <div class="content-hide">
+        <h3>Artículos en el carro de la compra</h3>
+        <div onclick="togglePopup()" class="close-btn">
+            X
+        </div>
+        <div class="content-products">
+            <div class="products">
+                <div class="product">
+                    <div class="product-image">
+                        <a href=""><img src="../images/product1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="#">
+                            Dormitorio Paraíso Nappy 2 plz + colchón + 2 almohadas + protector de colchón
+                        </a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">45 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/sofa.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Sofa</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 4</span>
+                    <span class="product-price">120 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/colchon.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/colchon.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/colchon.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/sofa.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/sofa.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/product1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/product1.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/colchon.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+                <div class="product" style="text-align:left">
+                    <div class="product-image">
+                        <a href=""><img src="../images/sofa.jpg" alt=""></a>
+                    </div>
+                    <div class="product-name">
+                        <a href="">Colchón</a>
+                    </div>
+                    <span class="product-quantity"><strong>Cantidad:</strong> 1</span>
+                    <span class="product-price">75 USD</span>
+                </div>
+                <hr>
+
+            </div>
+
+            <div class="subtotal">
+                <span>Subtotal de 11 artículos</span>
+                <span class="product-price">840 USD</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href=""><span>Comprar</span></a>
+        </div>
+
+    </div>
+    <!-- div containing the popup -->
+
+
+
+    <!-- <script src="../../node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+   
+</body>
+
+</html>

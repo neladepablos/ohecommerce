@@ -1,0 +1,23 @@
+{
+  "name": "ohecommerce",
+  "version": "1.0.0",
+  "description": "Ecommerce de muebles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "SASS",
+    "Jquery"
+  ],
+  "author": "Marianela Ruiz",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "node-sass": "^7.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
