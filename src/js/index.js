@@ -11,14 +11,9 @@ function togglePopup() {
 
 }
 
-// Click profile icons/class
-// $(".click-profile").on('click', function(event){
-//     alert("Redirigiendo al perfil del cliente...")
-// });
-
 
 /**  Click para el menu  **/
- const showMenu = (toggleId, navId) => {
+const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId);
      const nav = document.getElementById(navId);
 
